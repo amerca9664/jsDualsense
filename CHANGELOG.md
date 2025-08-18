@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/amerca9664/jsDualsense/compare/v1.0.2...v1.0.3) (2025-08-18)
+
+
+### Bug Fixes
+
+* fix test release please ([#9](https://github.com/amerca9664/jsDualsense/issues/9)) ([903b383](https://github.com/amerca9664/jsDualsense/commit/903b3835849f0d7306799e9e1bafcce9301f08d0))
+
 ## [1.0.2](https://github.com/amerca9664/jsDualsense/compare/v1.0.1...v1.0.2) (2025-08-18)
 
 
