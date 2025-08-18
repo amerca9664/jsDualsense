@@ -1,27 +1,31 @@
+# README Español
+
+[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/jonatasemidio/multilanguage-readme-pattern/blob/master/README.es.md)
+
 # jsDualsense
 
-**jsDualsense** es una librería JavaScript para interactuar con el control DualSense de PlayStation 5 (y Edge) usando WebHID. Permite leer inputs, controlar luces LED, vibración, gatillos adaptativos y audio del control desde el navegador.
+**jsDualsense** is a JavaScript library for interacting with the PlayStation 5 DualSense (and Edge) controller using WebHID. It allows you to read inputs, control LED lights, vibration, adaptive triggers, and audio from the controller directly in the browser.
 
-## Características
+## Features
 
-- Conexión fácil al control DualSense vía WebHID.
-- Lectura de datos de entrada (sticks, botones, gatillos, sensores).
-- Control de los LED RGB del control.
-- Control de vibración (motor izquierdo y derecho).
-- Control de los gatillos adaptativos (L2/R2).
-- Control de efectos de audio del control.
-- Cola de envío para evitar condiciones de carrera en los comandos de salida.
-- Apagado seguro del control.
+- Easy connection to the DualSense controller via WebHID.
+- Input reading (sticks, buttons, triggers, sensors).
+- RGB LED control.
+- Vibration control (left and right motors).
+- Adaptive trigger control (L2/R2).
+- Audio effect control from the controller.
+- Output command queue to prevent race conditions.
+- Safe shutdown of the controller.
 
-## Instalación
+## Installation
 
 ```
 npm install jsdualsense
 ```
 
-O descarga los archivos desde este repositorio.
+Or download the files from this repository.
 
-## Uso básico
+## Basic Usage
 
 ```javascript
 import { jsDualsense, TrigerEffects } from "jsdualsense";
@@ -29,49 +33,49 @@ import { jsDualsense, TrigerEffects } from "jsdualsense";
 const ds = new jsDualsense();
 
 async function main() {
-  await ds.start(); // Conectar
-  const data = await ds.readData(); // Leer datos de entrada
+  await ds.start(); // Connect
+  const data = await ds.readData(); // Read input data
   console.log("Input:", data);
 
-  // Cambiar el color de los LEDs a azul
+  // Change LED color to blue
   await ds.setLight.setColorI([0, 0, 255]);
 
-  // Vibrar el motor izquierdo al 50%
+  // Vibrate the left motor at 50%
   await ds.setVibrationL.setVibration(128);
 
-  // Configurar gatillo izquierdo con fuerza máxima
+  // Set left trigger to max force
   await ds.setTriggerL.setEffect(TrigerEffects.Weapon);
 
-  // Apagar todo y cerrar la conexión
+  // Turn everything off and close connection
   await ds.finish();
 }
 
 main();
 ```
 
-## API Principal
+## Main API
 
-- **start()**: Inicia la conexión con el control.
-- **readData()**: Lee y decodifica datos del control.
-- **setLight.setColorI([r, g, b])**: Cambia el color de los LED (0-255).
-- **setVibrationL.setVibration(valor)** / **setVibrationR.setVibration(valor)**: Ajusta vibración.
-- **setTriggerL.setEffect(config)** / **setTriggerR.setEffect(config)**: Configura efecto del gatillo.
-- **finish()**: Apaga efectos y cierra la conexión.
+- **start()**: Initiates the connection with the controller.
+- **readData()**: Reads and decodes input data.
+- **setLight.setColorI([r, g, b])**: Changes the LED color (0–255).
+- **setVibrationL.setVibration(value)** / **setVibrationR.setVibration(value)**: Sets vibration.
+- **setTriggerL.setEffect(config)** / **setTriggerR.setEffect(config)**: Configures trigger effect.
+- **finish()**: Turns off effects and closes the connection.
 
-## Requisitos
+## Requirements
 
-- Navegador con soporte para [WebHID API](https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API) (Chrome, Edge).
-- DualSense (PS5) o DualSense Edge.
+- A browser that supports the [WebHID API](https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API) (Chrome, Edge).
+- A DualSense (PS5) or DualSense Edge controller.
 
-## Notas
+## Notes
 
-- Debes ejecutar este código en un contexto seguro (https/localhost).
-- El usuario debe dar permiso para acceder al dispositivo HID.
+- This code must run in a secure context (https or localhost).
+- The user must grant permission to access the HID device.
 
-## Licencia
+## License
 
 MIT
 
 ---
 
-Desarrollado por [amerca9664](https://github.com/amerca9664)
+Developed by [amerca9664](https://github.com/amerca9664)
