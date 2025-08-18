@@ -1,0 +1,15 @@
+{
+    "name": "test-ps5-controller-npm",
+    "version": "1.0.0",
+    "description": "PS5 controller test",
+    "browser": "dist-browser",
+
+    "keywords": [
+        "awesome",
+        "project"
+    ],
+    "author": "Erik L.",
+    "license": "MIT"
+
+
+}
