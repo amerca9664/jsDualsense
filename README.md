@@ -18,19 +18,20 @@
 ```
 npm install jsdualsense
 ```
+
 O descarga los archivos desde este repositorio.
 
 ## Uso básico
 
 ```javascript
-import { jsDualsense } from 'jsdualsense';
+import { jsDualsense, TrigerEffects } from "jsdualsense";
 
 const ds = new jsDualsense();
 
 async function main() {
   await ds.start(); // Conectar
   const data = await ds.readData(); // Leer datos de entrada
-  console.log('Input:', data);
+  console.log("Input:", data);
 
   // Cambiar el color de los LEDs a azul
   await ds.setLight.setColorI([0, 0, 255]);
@@ -39,10 +40,7 @@ async function main() {
   await ds.setVibrationL.setVibration(128);
 
   // Configurar gatillo izquierdo con fuerza máxima
-  await ds.setTriggerL.setEffect({
-    Mode: 1,
-    Force: [255, 255, 255, 255, 255, 255, 255],
-  });
+  await ds.setTriggerL.setEffect(TrigerEffects.Weapon);
 
   // Apagar todo y cerrar la conexión
   await ds.finish();
