@@ -1,6 +1,6 @@
 # README Español
 
-[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/jonatasemidio/multilanguage-readme-pattern/blob/master/README.es.md)
+[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/amerca9664/jsDualsense/blob/dev/README.es.md)
 
 # jsDualsense
 
