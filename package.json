@@ -1,6 +1,6 @@
 {
     "name": "test-ps5-controller-npm",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "PS5 controller test",
     "browser": "dist-browser/controller.js",
 
