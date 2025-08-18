@@ -1,0 +1,8 @@
+export const BATTERY_STATE = {
+	0: 'DISCHARGING',
+	1: 'CHARGING',
+	2: 'FULL',
+	11: 'NOT_CHARGING',
+	15: 'ERROR',
+	10: 'VOLTAGE_OUT_OF_RANGE',
+};
