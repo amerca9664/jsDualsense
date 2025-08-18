@@ -1,5 +1,5 @@
 {
-    "name": "test-ps5-controller-npm",
+    "name": "jsdualsense",
     "version": "1.0.1",
     "description": "PS5 controller test",
     "browser": "dist-browser",
