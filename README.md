@@ -67,6 +67,7 @@ main();
 
 - Debes ejecutar este código en un contexto seguro (https/localhost).
 - El usuario debe dar permiso para acceder al dispositivo HID.
+- Solo pruebo funciona
 
 ## Licencia
 
