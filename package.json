@@ -1,6 +1,6 @@
 {
     "name": "jsdualsense",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Control your PS5 (or EDGE) controller with JavaScript using WebHID.",
     "browser": "./dist-browser/index.js",
     "exports": {
