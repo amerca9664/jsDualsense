@@ -8,7 +8,7 @@ import { outParser } from './parsers/outputReportParser';
 import { DSAudio } from './setterClasses/DSAudio';
 import { DSLight } from './setterClasses/DSLight';
 import { DSTrigger } from './setterClasses/DSTrigger';
-import { DSVibration } from './setterClasses/dsVibration';
+import { DSVibration } from './setterClasses/DSVibration';
 
 const conexion = new HIDconnector();
 
