@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/amerca9664/jsDualsense/compare/v1.0.3...v1.1.0) (2025-08-19)
+
+
+### Features
+
+* add examples and esm ([#11](https://github.com/amerca9664/jsDualsense/issues/11)) ([0708347](https://github.com/amerca9664/jsDualsense/commit/0708347b37b6d493369ea06d9e55a3842f30e5fe))
+
 ## [1.0.3](https://github.com/amerca9664/jsDualsense/compare/v1.0.2...v1.0.3) (2025-08-18)
 
 
