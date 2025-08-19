@@ -1,0 +1,15 @@
+{
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single",
+			"semicolons": "always",
+			"arrowParentheses": "asNeeded"
+		}
+	},
+	"css": {
+		"formatter": {
+			"enabled": true,
+			"quoteStyle": "single"
+		}
+	}
+}

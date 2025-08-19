@@ -1,31 +1,44 @@
 {
-    "name": "jsdualsense",
-    "version": "1.0.3",
-    "description": "Control your PS5 (or EDGE) controller with JavaScript using WebHID.",
-    "browser": "./dist-browser/index.js",
-    "exports": {
-        ".": {
-            "import": "./dist-browser/index.js",
-            "require": "./dist-browser/index.js"
-        }
-    },
-    "homepage": "https://github.com/amerca9664/jsDualsense",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/amerca9664/jsDualsense"
-    },
-    "keywords": [
-        "jsdualsense",
-        "ps5",
-        "dualsense",
-        "controller",
-        "gamepad",
-        "webhid",
-        "web",
-        "javascript",
-        "read",
-        "write"
-    ],
-    "author": "Erik L.",
-    "license": "MIT"
+
+	"name": "jsdualsense",
+	"version": "1.0.2",
+	"description": "Control your PS5 (or EDGE) controller with JavaScript using WebHID.",
+	"browser": "./dist-browser/index.js",
+	"exports": {
+		".": {
+			"import": "./dist-browser/index.js",
+			"require": "./dist-browser/index.js"
+		}
+	},
+	"files": [
+		"dist-browser",
+		"README.md",
+		"LICENSE",
+		"CHANGELOG.md",
+		"package.json"
+	],
+	"homepage": "https://github.com/amerca9664/jsDualsense",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/amerca9664/jsDualsense"
+	},
+	"keywords": [
+		"jsdualsense",
+		"ps5",
+		"dualsense",
+		"controller",
+		"gamepad",
+		"webhid",
+		"web",
+		"javascript",
+		"read",
+		"write"
+	],
+	"author": "Erik L.",
+	"license": "MIT",
+	"devDependencies": {
+		"@biomejs/biome": "2.2.0",
+		"@rollup/plugin-node-resolve": "^16.0.1"
+	}
 }
+
