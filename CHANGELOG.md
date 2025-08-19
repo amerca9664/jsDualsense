@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/amerca9664/jsDualsense/compare/v1.1.0...v1.1.1) (2025-08-19)
+
+
+### Bug Fixes
+
+* skypack ([#13](https://github.com/amerca9664/jsDualsense/issues/13)) ([241812b](https://github.com/amerca9664/jsDualsense/commit/241812b6dc34312363cdad39797585024b212044))
+
 ## [1.1.0](https://github.com/amerca9664/jsDualsense/compare/v1.0.3...v1.1.0) (2025-08-19)
 
 
