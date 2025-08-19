@@ -9,6 +9,7 @@
 			"require": "./dist-browser/index.js"
 		}
 	},
+	"type": "module",
 	"files": [
 		"dist-browser",
 		"README.md",
