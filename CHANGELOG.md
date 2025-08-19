@@ -4,6 +4,14 @@
 
 - fix test release please ([#9](https://github.com/amerca9664/jsDualsense/issues/9)) ([903b383](https://github.com/amerca9664/jsDualsense/commit/903b3835849f0d7306799e9e1bafcce9301f08d0))
 
+## [1.2.0](https://github.com/amerca9664/jsDualsense/compare/v1.1.1...v1.2.0) (2025-08-19)
+
+
+### Features
+
+* add examples ([a7bbb1a](https://github.com/amerca9664/jsDualsense/commit/a7bbb1ab8443f9c2e4263774e06c9fe955c0cc97))
+* add examples ([ad6151c](https://github.com/amerca9664/jsDualsense/commit/ad6151c076649ac80a267723d16488ac7ce8b4ec))
+
 ## [1.0.2](https://github.com/amerca9664/jsDualsense/compare/v1.0.1...v1.0.2) (2025-08-18)
 
 ### Bug Fixes
