@@ -9,6 +9,13 @@
 			"require": "./dist-browser/index.js"
 		}
 	},
+	"files": [
+		"dist-browser",
+		"README.md",
+		"LICENSE",
+		"CHANGELOG.md",
+		"package.json"
+	],
 	"homepage": "https://github.com/amerca9664/jsDualsense",
 	"repository": {
 		"type": "git",
@@ -29,6 +36,7 @@
 	"author": "Erik L.",
 	"license": "MIT",
 	"devDependencies": {
-		"@biomejs/biome": "2.2.0"
+		"@biomejs/biome": "2.2.0",
+		"@rollup/plugin-node-resolve": "^16.0.1"
 	}
 }
