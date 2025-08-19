@@ -9,7 +9,6 @@
 			"require": "./dist-browser/index.js"
 		}
 	},
-	"type": "module",
 	"files": [
 		"dist-browser",
 		"README.md",
@@ -37,8 +36,7 @@
 	"author": "Erik L.",
 	"license": "MIT",
 	"devDependencies": {
-		"@biomejs/biome": "2.2.0",
-		"@rollup/plugin-node-resolve": "^16.0.1"
+		"@biomejs/biome": "2.2.0"
 	}
 }
 
