@@ -4,6 +4,13 @@
 
 - fix test release please ([#9](https://github.com/amerca9664/jsDualsense/issues/9)) ([903b383](https://github.com/amerca9664/jsDualsense/commit/903b3835849f0d7306799e9e1bafcce9301f08d0))
 
+## [1.2.1](https://github.com/amerca9664/jsDualsense/compare/v1.2.0...v1.2.1) (2025-08-19)
+
+
+### Bug Fixes
+
+* DSVibration ([c96d524](https://github.com/amerca9664/jsDualsense/commit/c96d524503d3d0fa0bdce6ef9cd7eecb2eeb82d2))
+
 ## [1.2.0](https://github.com/amerca9664/jsDualsense/compare/v1.1.1...v1.2.0) (2025-08-19)
 
 
