@@ -1,4 +1,5 @@
 {
+
 	"name": "jsdualsense",
 	"version": "1.0.2",
 	"description": "Control your PS5 (or EDGE) controller with JavaScript using WebHID.",
@@ -40,3 +41,4 @@
 		"@rollup/plugin-node-resolve": "^16.0.1"
 	}
 }
+
