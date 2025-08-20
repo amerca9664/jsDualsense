@@ -7,7 +7,7 @@ const closeElement = document.getElementById('closeButton');
 const ds = new jsDualsense();
 
 startElement.addEventListener('click', async () => {
-	await ds.start(); // Connect
+	await ds.start(); //start Connect
 
 	//Left trigger set as "weapon", right trigger set as "vibration"
 	await ds.setTriggerL.setEffect(TrigerEffects.Weapon);
