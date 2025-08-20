@@ -1,4 +1,7 @@
-import { jsDualsense, MicSelect, AudioSpkSelect } from 'jsdualsense';
+// Local import for development or internal use
+import { AudioSpkSelect, jsDualsense, MicSelect } from 'jsdualsense';
+
+// Import from CDN for environments where packages can't be installed (e.g., directly in browsers)
 // import { jsDualsense, MicSelect, AudioSpkSelect } from 'https://cdn.skypack.dev/jsdualsense';
 
 const startElement = document.getElementById('connectButton');
