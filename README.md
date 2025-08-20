@@ -27,12 +27,38 @@ Or download the files from this repository.
 
 ## Basic Usage
 
+### HTML code
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light features example</title>
+  </head>
+  <body>
+    <input type="button" value="Conect" id="connectButton" />
+    <input type="button" value="Close" id="closeButton" />
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
+```
+
+### Javascript code
+
 ```javascript
+//index.js
+
 import { jsDualsense, TrigerEffects } from "jsdualsense";
+//import {jsDualsense, TrigerEffects} from 'https://cdn.skypack.dev/jsdualsense';
+
+const startElement = document.getElementById("connectButton");
+const closeElement = document.getElementById("closeButton");
 
 const ds = new jsDualsense();
 
-async function main() {
+startElement.addEventListener("click", async () => {
   await ds.start(); // Connect
   const data = await ds.readData(); // Read input data
   console.log("Input:", data);
@@ -45,12 +71,11 @@ async function main() {
 
   // Set left trigger to max force
   await ds.setTriggerL.setEffect(TrigerEffects.Weapon);
+});
 
-  // Turn everything off and close connection
-  await ds.finish();
-}
-
-main();
+closeElement.addEventListener("click", async () => {
+  await ds.finish(); // Disconnect
+});
 ```
 
 ## Main API
