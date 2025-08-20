@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.4.0](https://github.com/amerca9664/jsDualsense/compare/v1.3.1...v1.4.0) (2025-08-20)
+
+
+### Features
+
+* add readState example ([#24](https://github.com/amerca9664/jsDualsense/issues/24)) ([9518637](https://github.com/amerca9664/jsDualsense/commit/95186376eceb4b4391ad118307b1fa67861fcbaf))
+
+
+### Bug Fixes
+
+* 1 ([080a40c](https://github.com/amerca9664/jsDualsense/commit/080a40c5062fba4fbae4476fd94dfcc016879cf4))
+* 2 ([959229f](https://github.com/amerca9664/jsDualsense/commit/959229f3364b8fc94b41999a913cf53fb08a3246))
+* setState examples ([#27](https://github.com/amerca9664/jsDualsense/issues/27)) ([357fc83](https://github.com/amerca9664/jsDualsense/commit/357fc837381be079426062e280fd5ef761a09a2d))
+
 ## [1.3.1](https://github.com/amerca9664/jsDualsense/compare/v1.3.0...v1.3.1) (2025-08-20)
 
 
