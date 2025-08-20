@@ -1,9 +1,8 @@
-// import { jsDualsense } from 'jsdualsense';
+// Local import for development or internal use
+import { jsDualsense } from 'jsdualsense';
 
-import {
-	jsDualsense,
-	TrigerEffects,
-} from 'https://cdn.skypack.dev/jsdualsense';
+// Import from CDN for environments where packages can't be installed (e.g., directly in browsers)
+//import {jsDualsense, TrigerEffects,} from 'https://cdn.skypack.dev/jsdualsense';
 
 const connectElement = document.getElementById('connect');
 const readElement = document.getElementById('read');
