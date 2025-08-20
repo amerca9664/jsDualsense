@@ -23,30 +23,55 @@ O descarga los archivos desde este repositorio.
 
 ## Uso básico
 
+### HTML code
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light features example</title>
+  </head>
+  <body>
+    <input type="button" value="Conect" id="connectButton" />
+    <input type="button" value="Close" id="closeButton" />
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
+```
+
+### Javascript code
+
 ```javascript
+//index.js
+
 import { jsDualsense, TrigerEffects } from "jsdualsense";
+//import {jsDualsense, TrigerEffects} from 'https://cdn.skypack.dev/jsdualsense';
+
+const startElement = document.getElementById("connectButton");
+const closeElement = document.getElementById("closeButton");
 
 const ds = new jsDualsense();
 
-async function main() {
+startElement.addEventListener("click", async () => {
   await ds.start(); // Conectar
-  const data = await ds.readData(); // Leer datos de entrada
+  const data = await ds.readData(); // Leer datos
   console.log("Input:", data);
 
-  // Cambiar el color de los LEDs a azul
+  // Cambiar colo a azul
   await ds.setLight.setColorI([0, 0, 255]);
 
-  // Vibrar el motor izquierdo al 50%
+  // Vibracion al 50%
   await ds.setVibrationL.setVibration(128);
 
-  // Configurar gatillo izquierdo con fuerza máxima
+  // Colocar efecto de pistola
   await ds.setTriggerL.setEffect(TrigerEffects.Weapon);
+});
 
-  // Apagar todo y cerrar la conexión
-  await ds.finish();
-}
-
-main();
+closeElement.addEventListener("click", async () => {
+  await ds.finish(); // Desconectar
+});
 ```
 
 ## API Principal
