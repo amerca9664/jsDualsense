@@ -1,10 +1,13 @@
+// Local import for development or internal use
 import {
+	Brightness,
 	jsDualsense,
 	LedOptions,
-	PulseOptions,
-	Brightness,
 	PlayerID,
+	PulseOptions,
 } from 'jsdualsense';
+
+// Import from CDN for environments where packages can't be installed (e.g., directly in browsers)
 //import {jsDualsense, LedOptions, PulseOptions, Brightness, PlayerID,} from 'https://cdn.skypack.dev/jsdualsense';
 
 const startElement = document.getElementById('connectButton');
