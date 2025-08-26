@@ -83,6 +83,9 @@ closeElement.addEventListener("click", async () => {
 - **readData()**: Lee y decodifica datos del control.
 - **finish()**: Apaga efectos y cierra la conexión.
 
+## Documentation
+Revisa el folder [es_documentation](https://github.com/amerca9664/jsDualsense/tree/main/es_documentation) para mas informacion sobre esta libreria.
+
 ## Notas
 
 - Debes ejecutar este código en un contexto seguro (https/localhost).
