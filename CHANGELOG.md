@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.4.3](https://github.com/amerca9664/jsDualsense/compare/v1.4.2...v1.4.3) (2025-08-26)
+
+
+### Bug Fixes
+
+* add jsDualsense en_documentation ([dd6e7cf](https://github.com/amerca9664/jsDualsense/commit/dd6e7cf277463b9c87c1c4167ce5cb3be3a2b720))
+* add jsDualsense es_documentation ([d8852ec](https://github.com/amerca9664/jsDualsense/commit/d8852ec8a3b89efd22394ecaeea581a0e358e3e5))
+* type description ([6d9ef62](https://github.com/amerca9664/jsDualsense/commit/6d9ef62ed1704f2944d06b4cb8373c86da073bbd))
+
 ## [1.4.2](https://github.com/amerca9664/jsDualsense/compare/v1.4.1...v1.4.2) (2025-08-26)
 
 
