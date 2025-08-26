@@ -14,8 +14,11 @@
 - Vibration control (left and right motors).
 - Adaptive trigger control (L2/R2).
 - Audio effect control from the controller.
-- Output command queue to prevent race conditions.
-- Safe shutdown of the controller.
+
+## Requirements
+
+- A browser that supports the [WebHID API](https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API) (Chrome, Edge).
+- A DualSense (PS5) or DualSense Edge controller.
 
 ## Installation
 
@@ -82,15 +85,7 @@ closeElement.addEventListener("click", async () => {
 
 - **start()**: Initiates the connection with the controller.
 - **readData()**: Reads and decodes input data.
-- **setLight.setColorI([r, g, b])**: Changes the LED color (0–255).
-- **setVibrationL.setVibration(value)** / **setVibrationR.setVibration(value)**: Sets vibration.
-- **setTriggerL.setEffect(config)** / **setTriggerR.setEffect(config)**: Configures trigger effect.
 - **finish()**: Turns off effects and closes the connection.
-
-## Requirements
-
-- A browser that supports the [WebHID API](https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API) (Chrome, Edge).
-- A DualSense (PS5) or DualSense Edge controller.
 
 ## Notes
 
