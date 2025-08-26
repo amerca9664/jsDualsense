@@ -18,6 +18,7 @@ constructor(sendFunc);
 ### Method: `setLEDOption()`
 
 - **Description:** Changes the LED option (off, player LED brightness, uninterrumpable, both).
+- **Type:** `async`
 - **Parameter:** `Object` _(LedOptions.property)_
 - **Available properties:**
   - `LedOptions.Off`<br>
@@ -34,6 +35,7 @@ constructor(sendFunc);
 ### Method: `setPulseOption()`
 
 - **Description:** Changes the light pulse effect.
+- **Type:** `async`
 - **Parameter:** `Object` _(PulseOptions.property)_
 - **Available properties:**
   - `PulseOptions.Off`<br>
@@ -48,6 +50,7 @@ constructor(sendFunc);
 ### Method: `setBrightness()`
 
 - **Description:** Changes the player LED brightness.
+- **Type:** `async`
 - **Parameter:** `Object` _(Brightness.property)_
 - **Available properties:**
   - `Brightness.High`<br>
@@ -62,6 +65,7 @@ constructor(sendFunc);
 ### Method: `setPlayerID()`
 
 - **Description:** Changes the player number shown by the LEDs.
+- **Type:** `async`
 - **Parameter:** `Object` _(PlayerID.property)_
 - **Available properties:**
   - `PlayerID.PLAYER_1`<br>
@@ -80,5 +84,6 @@ constructor(sendFunc);
 ### Method: `setColorI()`
 
 - **Description:** Changes the touchpad color using an RGB array.
+- **Type:** `async`
 - **Parameter:** `Array` _(integer)_ _(length: 3)_
 - **Example:** `[255, 0, 0]` for red

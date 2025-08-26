@@ -18,6 +18,7 @@ constructor(sendFunc);
 ### Método: `setAudioOutput()`
 
 - **Descripción:** Cambia la salida de audio.
+- **Tipo:** `async`
 - **Parámetro:** `Object` _(AudioSpkSelect.property)_
 - **Propiedades disponibles:**
   - `AudioSpkSelect.Speaker`<br>
@@ -30,6 +31,7 @@ constructor(sendFunc);
 ### Método: `setMicOutput()`
 
 - **Descripción:** Cambia la salida del micrófono.
+- **Tipo:** `async`
 - **Parámetro:** `Object` _(MicSelect.property)_
 - **Propiedades disponibles:**
   - `MicSelect.Internal`<br>
@@ -42,6 +44,7 @@ constructor(sendFunc);
 ### Método: `setMicrophoneLED()`
 
 - **Descripción:** Activa o desactiva el LED del micrófono.
+- **Tipo:** `async`
 - **Parámetro:** `boolean`
 - **Opciones:**
   - `true`<br>
@@ -54,6 +57,7 @@ constructor(sendFunc);
 ### Método: `setMicrophoneState()`
 
 - **Descripción:** Cambia el estado del micrófono (mute/unmute) y ajusta el LED.
+- **Tipo:** `async`
 - **Parámetro:** `boolean`
 - **Opciones:**
   - `true`<br>

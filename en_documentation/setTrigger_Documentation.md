@@ -18,6 +18,7 @@ constructor(sendFunc);
 ### Method: `setMode()`
 
 - **Description:** Changes the trigger operating mode.
+- **Type:** `async`
 - **Parameter:** `Object` _(TriggerModes.property)_
 - **Available properties:**
   - `TriggerModes.Off`<br>
@@ -46,6 +47,7 @@ constructor(sendFunc);
 ### Method: `setForce()`
 
 - **Description:** Changes the trigger parameters.
+- **Type:** `async`
 - **Parameter:** `Array` _(integer)_ _(length: 7)_
 - **Example:** `[0, 255, 0, 0, 0, 0, 0]`
 
@@ -54,6 +56,7 @@ constructor(sendFunc);
 ### Method: `setEffect()`
 
 - **Description:** Allows you to set an effect by combining `setMode()` and `setForce()`.
+- **Type:** `async`
 - **Parameter:** `Object` _(TrigerEffects.property)_
 - **Available properties:**
   - `TrigerEffects.Off`<br>

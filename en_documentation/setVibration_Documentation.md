@@ -18,6 +18,7 @@ constructor(sendFunc);
 ### Method: `setVibration()`
 
 - **Description:** Changes the vibration motor intensity.
+- **Type:** `async`
 - **Parameter:** `number` _(integer from 0 to 255)_
 - **Options:**
   - `0`<br>

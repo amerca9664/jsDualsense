@@ -18,6 +18,7 @@ constructor(sendFunc);
 ### Method: `setAudioOutput()`
 
 - **Description:** Changes the audio output.
+- **Type:** `async`
 - **Parameter:** `Object` _(AudioSpkSelect.property)_
 - **Available properties:**
   - `AudioSpkSelect.Speaker`<br>
@@ -30,6 +31,7 @@ constructor(sendFunc);
 ### Method: `setMicOutput()`
 
 - **Description:** Changes the microphone input.
+- **Type:** `async`
 - **Parameter:** `Object` _(MicSelect.property)_
 - **Available properties:**
   - `MicSelect.Internal`<br>
@@ -42,6 +44,7 @@ constructor(sendFunc);
 ### Method: `setMicrophoneLED()`
 
 - **Description:** Turns the microphone LED on or off.
+- **Type:** `async`
 - **Parameter:** `boolean`
 - **Options:**
   - `true`<br>
@@ -54,6 +57,7 @@ constructor(sendFunc);
 ### Method: `setMicrophoneState()`
 
 - **Description:** Changes the microphone state (mute/unmute) and adjusts the LED.
+- **Type:** `async`
 - **Parameter:** `boolean`
 - **Options:**
   - `true`<br>

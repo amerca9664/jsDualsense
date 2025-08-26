@@ -18,6 +18,7 @@ constructor(sendFunc);
 ### Método: `setLEDOption()`
 
 - **Descripción:** Cambia la opción de LED (apagado, brillo, ininterrumpible, ambos).
+- **Tipo:** `async`
 - **Parámetro:** `Object` _(LedOptions.property)_
 - **Propiedades disponibles:**
   - `LedOptions.Off`<br>
@@ -34,6 +35,7 @@ constructor(sendFunc);
 ### Método: `setPulseOption()`
 
 - **Descripción:** Cambia el efecto de pulso de la luz.
+- **Tipo:** `async`
 - **Parámetro:** `Object` _(PulseOptions.property)_
 - **Propiedades disponibles:**
   - `PulseOptions.Off`<br>
@@ -48,6 +50,7 @@ constructor(sendFunc);
 ### Método: `setBrightness()`
 
 - **Descripción:** Cambia el brillo del LED de jugador.
+- **Tipo:** `async`
 - **Parámetro:** `Object` _(Brightness.property)_
 - **Propiedades disponibles:**
   - `Brightness.High`<br>
@@ -62,6 +65,7 @@ constructor(sendFunc);
 ### Método: `setPlayerID()`
 
 - **Descripción:** Cambia el número de jugador mostrado por los LEDs.
+- **Tipo:** `async`
 - **Parámetro:** `Object` _(PlayerID.property)_
 - **Propiedades disponibles:**
   - `PlayerID.PLAYER_1`<br>
@@ -80,5 +84,6 @@ constructor(sendFunc);
 ### Método: `setColorI()`
 
 - **Descripción:** Cambia el color del touchpad usando un array RGB.
+- **Tipo:** `async`
 - **Parámetro:** `Array` _(integer)_ _(length: 3)_
 - **Ejemplo:** `[255, 0, 0]` para rojo.

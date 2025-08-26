@@ -18,6 +18,7 @@ constructor(sendFunc);
 ### Método: `setMode()`
 
 - **Descripción:** Cambia el modo de funcionamiento del gatillo.
+- **Tipo:** `async`
 - **Parámetro:** `Object` _(TriggerModes.property)_
 - **Propiedades disponibles:**
   - `TriggerModes.Off`<br>
@@ -46,6 +47,7 @@ constructor(sendFunc);
 ### Método: `setForce()`
 
 - **Descripción:** Cambia los parametros del gatillo.
+- **Tipo:** `async`
 - **Parámetro:** `Array` _(integer)_ _(length: 7)_
 - **Ejemplo:** `[0, 255, 0, 0, 0, 0, 0]`
 
@@ -54,6 +56,7 @@ constructor(sendFunc);
 ### Método: `setEffect()`
 
 - **Descripción:** Permite establecer un efecto combinando `setMode()` y `setForce()`.
+- **Tipo:** `async`
 - **Parámetro:** `Object` _(TrigerEffects.property)_
 - **Propiedades disponibles:**
   - `TrigerEffects.Off`<br>
