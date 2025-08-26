@@ -88,7 +88,7 @@ closeElement.addEventListener("click", async () => {
 - **finish()**: Turns off effects and closes the connection.
 
 ## Documentation
-Check out the folder <a href="https://github.com/amerca9664/jsDualsense/tree/main/es_documentation" target="_blank">en_documentation</a> for more information about the function of this library.
+Check out the folder [en_documentation](https://github.com/amerca9664/jsDualsense/tree/main/es_documentation) for more information about the function of this library.
 
 ## Notes
 
