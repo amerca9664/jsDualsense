@@ -10,8 +10,11 @@
 - Control de vibración (motor izquierdo y derecho).
 - Control de los gatillos adaptativos (L2/R2).
 - Control de efectos de audio del control.
-- Cola de envío para evitar condiciones de carrera en los comandos de salida.
-- Apagado seguro del control.
+
+## Requisitos
+
+- Navegador con soporte para [WebHID API](https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API) (Chrome, Edge).
+- DualSense (PS5) o DualSense Edge.
 
 ## Instalación
 
@@ -78,15 +81,7 @@ closeElement.addEventListener("click", async () => {
 
 - **start()**: Inicia la conexión con el control.
 - **readData()**: Lee y decodifica datos del control.
-- **setLight.setColorI([r, g, b])**: Cambia el color de los LED (0-255).
-- **setVibrationL.setVibration(valor)** / **setVibrationR.setVibration(valor)**: Ajusta vibración.
-- **setTriggerL.setEffect(config)** / **setTriggerR.setEffect(config)**: Configura efecto del gatillo.
 - **finish()**: Apaga efectos y cierra la conexión.
-
-## Requisitos
-
-- Navegador con soporte para [WebHID API](https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API) (Chrome, Edge).
-- DualSense (PS5) o DualSense Edge.
 
 ## Notas
 
