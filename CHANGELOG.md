@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.4.1](https://github.com/amerca9664/jsDualsense/compare/v1.4.0...v1.4.1) (2025-08-26)
+
+
+### Bug Fixes
+
+* add setAudio es_documentation ([fde719e](https://github.com/amerca9664/jsDualsense/commit/fde719ef41a033d57b4cf772a93ef8f9381910be))
+* add setLight documentation ([43498c6](https://github.com/amerca9664/jsDualsense/commit/43498c69b71cc752db66fea4e772d3c637d31e79))
+* add setLight en_documentation ([1f226b2](https://github.com/amerca9664/jsDualsense/commit/1f226b2fbf0bd6b58c9fa1d213147d3f49830678))
+* add setTrigger documentation ([ff6f715](https://github.com/amerca9664/jsDualsense/commit/ff6f7158d618df880b84b948e8e91ee9087f939f))
+* add setTrigger en_documentation ([99d2400](https://github.com/amerca9664/jsDualsense/commit/99d2400150c626061912144a0a153afdb23c2a44))
+* add setVibration documentation ([4fd54b5](https://github.com/amerca9664/jsDualsense/commit/4fd54b5ee5bc55eeacdaafdc5f8ee9b85cf72660))
+* add setVibration en_documentation ([aadacfd](https://github.com/amerca9664/jsDualsense/commit/aadacfd31887245e346c069fa8d375529fec816b))
+
 ## [1.4.0](https://github.com/amerca9664/jsDualsense/compare/v1.3.1...v1.4.0) (2025-08-20)
 
 
