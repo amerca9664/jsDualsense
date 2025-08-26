@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.4](https://github.com/amerca9664/jsDualsense/compare/v1.4.3...v1.4.4) (2025-08-26)
+
+
+### Bug Fixes
+
+* README.es.md ([e8e14e4](https://github.com/amerca9664/jsDualsense/commit/e8e14e401f8daa17aabfc0864698282d6e3b2de6))
+
 ## [1.4.3](https://github.com/amerca9664/jsDualsense/compare/v1.4.2...v1.4.3) (2025-08-26)
 
 
