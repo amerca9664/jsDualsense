@@ -95,10 +95,15 @@ Revisa el folder [es_documentation](https://github.com/amerca9664/jsDualsense/tr
 - Debes ejecutar este código en un contexto seguro (https/localhost).
 - El usuario debe dar permiso para acceder al dispositivo HID.
 
+## Creditos
+
+- [flok](https://github.com/flok), este proyecto es casi una traduccion de su proyecto [pydualsense](https://github.com/flok/pydualsense).
+- [dualshock-tools](https://github.com/dualshock-tools), toda la informacion acerca del software y hardware proviene de su proyecto [dualshock-tools.github.io](https://github.com/dualshock-tools/dualshock-tools.github.io). Tambien puedes calibrar tu control en su pagina [DualShock Calibration GUI](https://dualshock-tools.github.io/)
+
 ## Licencia
 
 MIT
 
 ---
 
-Desarrollado por [amerca9664](https://github.com/amerca9664)
+Desarrollado por [amerca9664](https://github.com/amerca9664), email: amerca9664@gmail.com

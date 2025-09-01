@@ -99,10 +99,15 @@ Check out the folder [en_documentation](https://github.com/amerca9664/jsDualsens
 - This code must run in a secure context (https or localhost).
 - The user must grant permission to access the HID device.
 
+## Credits
+
+- [flok](https://github.com/flok), this proyect it is almost a traslate of his proyect [pydualsense](https://github.com/flok/pydualsense).
+- [dualshock-tools](https://github.com/dualshock-tools), all the information about software and hardware comes from his proyect [dualshock-tools.github.io](https://github.com/dualshock-tools/dualshock-tools.github.io). Also you can calibrate your controller in his page [DualShock Calibration GUI](https://dualshock-tools.github.io/)
+
 ## License
 
 MIT
 
 ---
 
-Developed by [amerca9664](https://github.com/amerca9664)
+Developed by [amerca9664](https://github.com/amerca9664), email: amerca9664@gmail.com
