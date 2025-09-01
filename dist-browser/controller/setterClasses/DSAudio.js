@@ -1,4 +1,5 @@
 import { AudioSpkSelect, MicSelect } from '../constants/constOutReport';
+import { ErrorString } from '../constants/errorMagicStrings';
 import { validateOutput } from './utils';
 
 export class DSAudio {
@@ -37,7 +38,7 @@ export class DSAudio {
 		 *     Exception: false state for the led
 		 */
 		if (typeof value !== 'boolean') {
-			throw new TypeError('The parameter must be boolean.');
+			throw new TypeError(ErrorString.ERROR_TYPE_BOOLEAN);
 		}
 		this.microphone_led = value;
 		await this.sendAudio();
@@ -54,7 +55,7 @@ export class DSAudio {
 		 *     TypeError: state was not a bool
 		 */
 		if (typeof state !== 'boolean') {
-			throw new TypeError('The parameter must be boolean.');
+			throw new TypeError(ErrorString.ERROR_TYPE_BOOLEAN);
 		}
 
 		this.setMicrophoneLED(state); // set led accordingly

@@ -3,12 +3,21 @@ import {
 	CONECT_PARAMS_DUALSENSE,
 	CONECT_PARAMS_EDGE,
 } from './constants/constConnectsParam';
+import { INFO_TO_GET } from './constants/constFeatureReport';
+import { ErrorString } from './constants/errorMagicStrings';
+import {
+	alloc_req,
+	decoderData,
+	reverse_str,
+} from './parsers/featReportParser';
 import { inputParser } from './parsers/inputReportParser';
 import { outParser } from './parsers/outputReportParser';
+import { softwareInfoDecoder } from './parsers/softwareInfoDecoder';
 import { DSAudio } from './setterClasses/DSAudio';
 import { DSLight } from './setterClasses/DSLight';
 import { DSTrigger } from './setterClasses/DSTrigger';
 import { DSVibration } from './setterClasses/DSVibration';
+import { validateOutput } from './setterClasses/utils';
 
 const conexion = new HIDconnector();
 
@@ -71,6 +80,78 @@ class jsDualsense {
 			release(); // 🔓 Mutex/Lock, release next in queue
 		}
 	}
+
+	async sendFeatReport(reportId, sendArray) {
+		if (typeof reportId !== 'number') {
+			throw TypeError(ErrorString.ERROR_TYPE_NUMBER);
+		}
+
+		if (!ArrayBuffer.isView(sendArray)) {
+			throw new TypeError(ErrorString.ERROR_TYPE_BUFFER);
+		}
+
+		const release = await this._enqueueSend();
+
+		try {
+			await conexion.sendFeature(reportId, sendArray);
+		} catch (error) {
+			console.error(error);
+		} finally {
+			release(); // 🔓 Mutex/Lock, release next in queue
+		}
+	}
+
+	async readFeatReport(reportId) {
+		if (typeof reportId !== 'number') {
+			throw TypeError(ErrorString.ERROR_TYPE_NUMBER);
+		}
+
+		const readData = await conexion.receiveFeature(reportId);
+
+		return readData;
+	}
+
+	async getInfo(typeInfo) {
+		validateOutput(typeInfo, INFO_TO_GET);
+		// if (
+		// 	typeof base !== 'number' ||
+		// 	typeof num !== 'number' ||
+		// 	typeof length !== 'number'
+		// ) {
+		// 	throw TypeError(ErrorString.ERROR_TYPE_NUMBER);
+		// }
+
+		// if (typeof decodeAscii !== 'boolean') {
+		// 	throw TypeError(ErrorString.ERROR_TYPE_BOOLEAN);
+		// }
+
+		const sendArray = await alloc_req(
+			128,
+			[typeInfo[0], typeInfo[1]],
+			conexion.device,
+		);
+		await this.sendFeatReport(128, sendArray);
+
+		const receiveData = await this.readFeatReport(129);
+
+		const dataDecode = await decoderData(receiveData, typeInfo[2], typeInfo[3]);
+
+		if (typeInfo[4]) {
+			const reversedataDecode = reverse_str(dataDecode);
+
+			return reversedataDecode;
+		}
+
+		return dataDecode;
+	}
+
+	async getSoftwareInfo() {
+		const receiveData = await this.readFeatReport(0x20);
+		const dataParser = softwareInfoDecoder(receiveData);
+
+		return dataParser;
+	}
+
 	async finish() {
 		// Gracefully shuts down the device by resetting light, vibration, and trigger effects to neutral values. Then closes the HID connection.
 		if (conexion.device !== null) {

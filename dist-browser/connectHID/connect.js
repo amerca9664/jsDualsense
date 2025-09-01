@@ -91,6 +91,31 @@ class HIDconnector {
 		}
 	}
 
+	async receiveFeature(reportId) {
+		if (typeof reportId !== 'number') {
+			throw new TypeError(ErrorString.ERROR_TYPE_NUMBER);
+		}
+
+		const data = await this.device.receiveFeatureReport(reportId);
+		return data;
+	}
+
+	async sendFeature(reportId, data) {
+		if (typeof reportId !== 'number') {
+			throw new TypeError(ErrorString.ERROR_TYPE_NUMBER);
+		}
+
+		if (!ArrayBuffer.isView(data)) {
+			throw new TypeError(ErrorString.ERROR_TYPE_BUFFER);
+		}
+
+		try {
+			await this.device.sendFeatureReport(reportId, data);
+		} catch {
+			throw new ConnectionNotSend(ErrorString.ERROR_SEND);
+		}
+	}
+
 	async closeDev() {
 		//Closes the connection to the HID device and resets the device property to null. Throws a custom error if closing fails.
 

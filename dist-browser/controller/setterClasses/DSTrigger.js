@@ -1,4 +1,5 @@
 import { TriggerModes } from '../constants/constOutReport';
+import { ErrorString } from '../constants/errorMagicStrings';
 import { validateArray, validateOutput } from './utils';
 
 export class DSTrigger {
@@ -39,11 +40,11 @@ export class DSTrigger {
 			typeof effect === 'object' &&
 			Object.prototype.toString.call(effect) === '[object Object]';
 		if (!checkObject) {
-			throw new TypeError('Effect not exist, consult constOutReport.js');
+			throw new TypeError(ErrorString.ERROR_EFFECT);
 		}
 
 		if (typeof effect.Mode !== 'number') {
-			throw new TypeError('You can do that, consult constOutReport.js');
+			throw new TypeError(ErrorString.ERROR_TYPE_NUMBER);
 		}
 		validateArray(effect.Force, 7);
 		this.mode = effect.Mode;

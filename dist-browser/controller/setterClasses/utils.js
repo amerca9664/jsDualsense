@@ -1,32 +1,33 @@
+import { ErrorString } from '../constants/errorMagicStrings';
+
 export const validateOutput = (value, checkIn) => {
 	const valuesToCheck = Object.values(checkIn);
-
 	const numberExist = valuesToCheck.includes(value);
 
 	if (!numberExist) {
-		throw new TypeError('Property not exist, consult constOutReport.js');
+		throw new TypeError(ErrorString.ERROR_TYPE_ENUMF);
 	}
 	return;
 };
 
 export const validateArray = (array, maxLength) => {
-	const isAArray = Array.isArray(array);
-	if (!isAArray) {
-		throw new TypeError('The parameter must be array');
+	const isArray = Array.isArray(array);
+	if (!isArray) {
+		throw new TypeError(ErrorString.ERROR_TYPE_ARRAY);
 	}
 
 	const length = array.length !== maxLength;
 	if (length) {
-		throw new RangeError('The length have to be 7.');
+		throw new RangeError(`${ErrorString.ERROR_LENGTH} ${maxLength}.`);
 	}
 
 	const isInt = array.some(value => !Number.isInteger(value));
 	if (isInt) {
-		throw new TypeError('The parameters must be integers.');
+		throw new TypeError(ErrorString.ERROR_TYPE_NUMBER);
 	}
 
 	const isInRange = array.some(value => value < 0 || value > 255);
 	if (isInRange) {
-		throw new RangeError('Values must be between 0 and 255.');
+		throw new RangeError(ErrorString.ERROR_RANGE);
 	}
 };

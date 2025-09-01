@@ -5,6 +5,8 @@ export const ErrorString = {
 	ERROR_TIMEOUT: 'Error reading data, connection timeout',
 	ERROR_SEND: 'Error sending data',
 	ERROR_CLOSE: 'Device already close',
+	ERROR_TYPE_NUMBER: 'The parameter must be number.',
+	ERROR_TYPE_BUFFER: 'The parameter must be typed array objects or a DataView',
 };
 
 export const WarningString = {
