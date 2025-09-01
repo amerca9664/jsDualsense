@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/amerca9664/jsDualsense/compare/v1.5.0...v1.5.1) (2025-09-01)
+
+
+### Bug Fixes
+
+* add credits ([0d8ffd1](https://github.com/amerca9664/jsDualsense/commit/0d8ffd1ac516183d4dc1f6aae16b065f7bb6146e))
+
 ## [1.5.0](https://github.com/amerca9664/jsDualsense/compare/v1.4.4...v1.5.0) (2025-09-01)
 
 
