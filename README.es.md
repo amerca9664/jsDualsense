@@ -49,7 +49,10 @@ O descarga los archivos desde este repositorio.
 ```javascript
 //index.js
 
+// Local import para desarrollo o uso interno
 import { jsDualsense, TrigerEffects } from "jsdualsense";
+
+// Import desde CDN para entornos donde no se pueden instalar paquetes (por ejemplo, directamente en navegadores)
 //import {jsDualsense, TrigerEffects} from 'https://cdn.skypack.dev/jsdualsense';
 
 const startElement = document.getElementById("connectButton");
@@ -84,6 +87,7 @@ closeElement.addEventListener("click", async () => {
 - **finish()**: Apaga efectos y cierra la conexión.
 
 ## Documentation
+
 Revisa el folder [es_documentation](https://github.com/amerca9664/jsDualsense/tree/main/es_documentation) para mas informacion sobre esta libreria.
 
 ## Notas
