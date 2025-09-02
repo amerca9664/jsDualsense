@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.2](https://github.com/amerca9664/jsDualsense/compare/v1.5.1...v1.5.2) (2025-09-02)
+
+
+### Bug Fixes
+
+* add read hardware info example ([bb5c75c](https://github.com/amerca9664/jsDualsense/commit/bb5c75cc785727ca704f11e4bd927442cb46649b))
+* add read software info example ([3ac1a58](https://github.com/amerca9664/jsDualsense/commit/3ac1a58e0baa838a3e55785aed71a4bdf90d9786))
+
 ## [1.5.1](https://github.com/amerca9664/jsDualsense/compare/v1.5.0...v1.5.1) (2025-09-01)
 
 
