@@ -53,12 +53,12 @@ constructor();
 ### `sendFeatReport()`
 
 - **Description:**  
-  Sends a Feature Report to the DualSense device using a safe, queued dispatch mechanism `_enqueueSend()`.
+  Sends a Feature Report to the DualSense device using a safe queued dispatch mechanism `_enqueueSend()`.
 
 - **Parameters:**
 
   - `reportId` (`number`): The ID of the report to send.
-  - `sendArray` (`TypedArray`): The data to send; must be a valid `ArrayBuffer` view.
+  - `sendArray` (`TypedArray`): The data to send, must be a valid `ArrayBuffer` or `Dataview`.
 
 - **Type:** `async`
 
@@ -73,28 +73,58 @@ constructor();
   - `reportId` (`number`): The ID of the report to read.
 
 **Type:** `async`  
-**Returns:** `ArrayBuffer`: containing the received data.
+**Returns:** `Dataview` containing the received data.
 
 ---
 
 ### `getInfo()`
 
 - **Description:**  
-  Requests and decodes specific information from the device using Feature Reports.
+   Requests and decodes hardware information from the device.
+
+  - Serial number
+  - MCU unique ID
+  - PCB ID
+  - Battery Barcode
+  - VCM Left Barcode
+  - VCM Right Barcode
+  - Touchpad ID
 
 - **Parameters:** `Object` _(INFO_TO_GET.property)_
 - **Available properties:**
   - `INFO_TO_GET.serial_number`<br>
-    Serial number.
+    Serial number
+  - `INFO_TO_GET.mcu_unique_id`<br>
+    MCU Unique ID
+  - `INFO_TO_GET.pcba_id`<br>
+    PCBA ID
+  - `INFO_TO_GET.battery_barcode`<br>
+    Battery Barcode
+  - `INFO_TO_GET.vcm_barcode_left`<br>
+    VCM Barcode Left
+  - `INFO_TO_GET.vcm_barcode_right`<br>
+    VCM Barcode Right
+  - `INFO_TO_GET.touchpad_id`<br>
+    Touchpad ID
 - **Type:** `async`
-- **Returns:** `string`: containing hardware information
+- **Returns:** `string` containing hardware information
 
 ---
 
 ### `getSoftwareInfo()`
 
-- **Description:**  
+- **Description:**
   Retrieves software information from the device.
+
+  - FW Build Date
+  - FW Type
+  - FW Series
+  - HW Info
+  - FW Version
+  - Device Info
+  - FW Version
+  - SBL FW Version
+  - Touchpad FW Version
 
 - **Type:** `async`
 - **Returns:** `Object` containing software information
