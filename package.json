@@ -34,9 +34,8 @@
 		"write"
 	],
 	"author": "Erik L.",
-	"license": "MIT",
+	"license": "Unlicense",
 	"devDependencies": {
 		"@biomejs/biome": "2.2.0"
 	}
 }
-
